@@ -48,3 +48,4 @@ ENV/
 # VS Code
 .vscode/
 .history
+instance/

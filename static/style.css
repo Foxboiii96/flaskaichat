@@ -12,9 +12,12 @@ body {
     border-radius: 5px;
     overflow: hidden;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 #chat-history {
+    flex-grow: 1;
     height: 400px;
     padding: 10px;
     overflow-y: scroll;
@@ -33,16 +36,19 @@ body {
     text-align: left;
 }
 
-#user-input {
-    width: calc(100% - 70px);
-    padding: 10px;
-    border: none;
+#input-container {
+    display: flex;
     border-top: 1px solid #ddd;
 }
 
-#send-button {
-    width: 60px;
+#user-input {
+    flex-grow: 1;
     padding: 10px;
+    border: none;
+}
+
+#send-button {
+    padding: 10px 15px;
     border: none;
     background-color: #007bff;
     color: #fff;
